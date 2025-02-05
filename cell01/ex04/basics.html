@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        /* พื้นหลังสีชมพู */
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        /* หัวข้อใหญ่ สีขาว */
+        h1 {
+            color: white;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        /* จัดเรียงรูปภาพให้ข้างกัน */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        /* ขนาดของรูป */
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* ลิงก์ใต้รูป */
+        .image-container a {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: blue;
+            text-decoration: none;
+        }
+        /* เส้นคั่น */
+        hr {
+            margin-top: 30px;
+            border: 1px solid white;
+            width: 80%;
+        }
+        /* ข้อความลิขสิทธิ์ด้านล่าง */
+        .footer {
+            font-style: italic;
+            font-family: monospace;
+            text-align: right;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- หัวข้อใหญ่ -->
+    <h1>Pink? What’s wrong with pink? ✨</h1>
+
+    <!-- ส่วนแสดงรูปภาพ -->
+    <div class="image-container">
+        <!-- รูปที่ 1 -->
+        <div>
+            <img src="pic1.jpg" alt="Amazon">
+            <a href="https://www.amazon.com" target="_blank">Visit Amazon</a>
+        </div>
+        <!-- รูปที่ 2 -->
+        <div>
+            <img src="pic2.jpg" alt="eBay">
+            <a href="https://www.ebay.com" target="_blank">Visit eBay</a>
+        </div>
+    </div>
+
+    <!-- เส้นคั่น -->
+    <hr>
+
+    <!-- ข้อความลิขสิทธิ์ -->
+    <div class="footer">
+        © wil 2021
+    </div>
+
+</body>
+</html>
