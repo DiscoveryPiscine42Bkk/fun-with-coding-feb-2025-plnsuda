@@ -1,0 +1,51 @@
+/* ตั้งค่าเริ่มต้น */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* สไตล์ของแต่ละส่วนที่มีพื้นหลังแบบ Parallax */
+.parallax {
+    position: relative;
+    height: 100vh; /* สูงเต็มหน้าจอ */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* ทำให้เกิดเอฟเฟกต์ Parallax */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* กำหนดภาพพื้นหลังของแต่ละ Parallax */
+.bg1 {
+    background-image: url('image1.jpg'); /* เปลี่ยนเป็นภาพของคุณ */
+}
+
+.bg2 {
+    background-image: url('image2.jpg'); /* เปลี่ยนเป็นภาพของคุณ */
+}
+
+/* ทำให้ข้อความอยู่ตรงกลาง */
+.text {
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* ทำให้ข้อความอ่านง่ายขึ้น */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* กล่องข้อความกลาง */
+.message-box {
+    height: 200px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
