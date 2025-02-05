@@ -13,38 +13,38 @@
             padding: 20px;
         }
 
-        /* สร้าง container สำหรับตาราง */
+        /* กำหนดตารางให้เต็มหน้าจอ */
         .table-container {
             width: 100%;
-            overflow-x: auto; /* ให้สามารถเลื่อนซ้าย-ขวาได้ */
+            overflow-x: auto; /* ถ้าตารางกว้างเกินไป ให้เลื่อนได้ */
         }
 
         /* ตั้งค่าตาราง */
         table {
             width: 100%; /* ให้ตารางขยายเต็มพื้นที่ */
-            border-collapse: collapse; /* รวมเส้นขอบของตาราง */
+            border-collapse: collapse; /* รวมเส้นขอบของเซลล์ */
             min-width: 600px; /* ป้องกันไม่ให้ตารางเล็กเกินไป */
         }
 
-        /* ตั้งค่าช่องของตาราง (th และ td) */
+        /* ตั้งค่าช่องของตาราง */
         th, td {
-            border: 1px solid #ddd; /* เส้นขอบสีเทา */
+            border: 1px solid black; /* เส้นขอบของเซลล์ */
             padding: 10px;
-            text-align: left; /* ชิดซ้าย */
+            text-align: left;
         }
 
-        /* ตั้งค่าหัวตาราง */
+        /* กำหนดสีพื้นหลังของหัวตาราง */
         th {
             background-color: #f4f4f4;
         }
 
-        /* ทำให้ตารางย่อขนาดได้เมื่อหน้าจอเล็ก */
+        /* Responsive: เมื่อหน้าจอเล็กลง */
         @media (max-width: 600px) {
             table {
                 font-size: 12px; /* ลดขนาดฟอนต์ */
             }
             th, td {
-                padding: 8px; /* ลดระยะห่าง */
+                padding: 5px;
             }
         }
     </style>
@@ -52,24 +52,27 @@
 </head>
 <body>
 
-    <h2>Responsive Table</h2>
+    <h2>Exercise 06: Responsive Table</h2>
     
     <div class="table-container">
         <table>
             <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
+                <th colspan="3">Exercise 06</th>
             </tr>
             <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-                <td>Data 3</td>
+                <td colspan="3">Responsive</td>
             </tr>
             <tr>
-                <td>Data 4</td>
-                <td>Data 5</td>
-                <td>Data 6</td>
+                <td>Turn-in directory:</td>
+                <td colspan="2">ex06/</td>
+            </tr>
+            <tr>
+                <td>Files to turn in:</td>
+                <td colspan="2">responsive.html</td>
+            </tr>
+            <tr>
+                <td>Allowed functions:</td>
+                <td colspan="2">None</td>
             </tr>
         </table>
     </div>
