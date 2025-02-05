@@ -1,0 +1,59 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f8f8f8;
+}
+
+/* หัวข้อ */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* สไตล์เมนูหลัก */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ปุ่ม Dropdown */
+.dropdown-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* รายการที่ซ่อนอยู่ */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* สไตล์ของแต่ละตัวเลือก */
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+}
+
+/* แสดงเมนูเมื่อโฮเวอร์ */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* เปลี่ยนสีเมื่อโฮเวอร์ที่ตัวเลือก */
+.dropdown-content a:hover {
+    background-color: #ffeb99;
+}
+

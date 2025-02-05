@@ -1,0 +1,42 @@
+/* รีเซ็ตค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+/* ห่อ Table ไว้เพื่อทำให้เลื่อนได้ */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* ทำให้ Table ขยายเต็มหน้าจอ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ตกแต่งขอบตาราง */
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* ทำให้หัวตารางมีสีพื้นหลัง */
+th {
+    background-color: #f4f4f4;
+}
+
+/* ปรับขนาดตัวอักษรในจอเล็ก */
+@media screen and (max-width: 600px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
