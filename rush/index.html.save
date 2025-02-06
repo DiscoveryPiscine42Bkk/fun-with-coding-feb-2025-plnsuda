@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .nav-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .nav-btn:hover {
+            color: #f4a261;
+        }
+        .hero {
+            height: 100vh;
+            background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out, slideIn 3s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            opacity: 0.8;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-30px); }
+            to { transform: translateY(0); }
+        }
+        .portfolio-links {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .portfolio-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+        .portfolio-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+        }
+        .portfolio-card h3 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <button class="nav-btn" onclick="location.href='index.html';">🏠 Home</button>
+                <button class="nav-btn" onclick="location.href='cv1.html';">✨ Pinsuda</button>
+                <button class="nav-btn" onclick="location.href='cv2.html';">🎨 Nakwan</button>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>✨ Welcome to Creativity ✨</h1>
+            <p>Explore the world of innovation & design</p>
+        </div>
+    </section>
+
+    <section class="portfolio-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-card p-4" onclick="location.href='cv1.html';">
+                        <h3>✨ Pinsuda's Portfolio ✨</h3>
+                        <p>Innovative projects & creative ideas</p>
+                        <a href="cv1.html" class="btn btn-light mt-2">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portfolio-card p-4" onclick="location.href='cv2.html';">
+                        <h3>🎨 Nakwan's Portfolio 🎨</h3>
+                        <p>Art, design & digital excellence</p>
+                        <a href="cv2.html" class="btn btn-light mt-2">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Creative Portfolio Showcase 🚀</p>
+    </footer>
+</body>
+</html>
+
