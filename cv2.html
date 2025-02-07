@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rungthip Suksrisawad - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #f8f9fa;
+            color: #0f172a;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            background: #ffffff;
+            text-align: center;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .hero-buttons .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        .hero-image img {
+            width: 350px;
+            border-radius: 50%;
+            border: 5px solid #6a11cb;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .service-section, .experience-section {
+            padding: 80px 10%;
+            background: #ffffff;
+            text-align: center;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .emoji-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="btn btn-outline-light me-2" onclick="location.href='index.html';">🏠 Home</button>
+            <a href="https://www.linkedin.com/in/rungthip-suksrisawad-58575434b" target="_blank" class="btn btn-outline-light">🔗 LinkedIn</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h5>HELLO</h5>
+            <h1>I AM RUNGTHIP SUKSRISAWAD</h1>
+            <p>Agricultural Intelligence Engineer | AI & Precision Agriculture</p>
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/rungthip-suksrisawad-58575434b" target="_blank" class="btn btn-primary">Hire Me</a>
+                <a href="#experience" class="btn btn-outline-dark">View Experiences</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/images/rungthip-profile.jpg" alt="Rungthip Suksrisawad" onerror="console.error('Image not found: assets/images/rungthip-profile.jpg')">
+        </div>
+    </section>
+    
+    <section id="experience" class="experience-section">
+        <h2 class="section-title">Experiences</h2>
+        <p>Internship at BANGSAI AGRICULTURAL CENTER CO.,LTD</p>
+        <p>Worked on a research project comparing growth methods of habanero peppers using hydroponics, tidal, and aeroponics systems.</p>
+        <p>Tractor Operation Training with CNH (Learning safety & hand signals)</p>
+        <p>Agricultural Drone Pilot Training with HiveGround (Learning safety & drone laws)</p>
+    </section>
+
+    <section id="services" class="service-section">
+        <h2 class="section-title">Service Offers</h2>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="emoji-icon">🚜</div>
+                        <h5>Tractor Operations</h5>
+                        <p>Training and safety knowledge for tractor handling.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="emoji-icon">🛩️</div>
+                        <h5>Agricultural Drone Piloting</h5>
+                        <p>Expertise in drone safety, operations, and regulations.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="emoji-icon">🌱</div>
+                        <h5>Smart Farming</h5>
+                        <p>Applying AI and precision farming techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-card">
+                        <div class="emoji-icon">📊</div>
+                        <h5>Data Analysis</h5>
+                        <p>Analyzing agricultural data for optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center py-4 bg-dark text-light">
+        <p>&copy; 2024 Rungthip Suksrisawad</p>
+        <p>📞 Phone: 061-871-5431 | 📧 Email: rungtip8513@gmail.com</p>
+        <p>📍 Address: 35/8 Ratchadon Uthit Road, Bangkhla, Chachoengsao, Thailand</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/rungthip-suksrisawad-58575434b" target="_blank" class="text-light">Connect on LinkedIn</a></p>
+    </footer>
+</body>
+</html>
